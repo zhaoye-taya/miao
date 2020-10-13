@@ -5,178 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      /* body {
-        box-sizing: border-box;
-        
-       
-        }
+    
 
-      body div {
-        background-color: black;
-        border: none;
-        width: 100%;
-        }
- 
-        main {
-          width: 600px;
-          margin: auto;
-        }
-
-      main p:first-child {
-        color: aliceblue;
-        margin-top: -20px;
-        
-      }
-      main p:last-child {
-        margin-bottom: 80px;
-      } 
-
-      .a {
-        list-style: none;
-       
-        width: 600px;
-        padding: 0;
-        text-align: center;
-        margin-top: 234px;
-        margin: auto;
-        
-      }
-      .a li:nth-child(4n) {
-        margin-top: -243px;
-      }
-
-      .a li {
-        background-color: pink;
-        border: 3px solid;
-        width: 180px;
-        height: 40px;
-        margin-bottom: 15px;
-       
-      }
-      .a li:nth-child(n+5) {
-        margin-left: 202px;
-      }
-
-      .a li:nth-child(n+9) {
-        margin-left: 408px;
+body {
+  margin: 0;
 }
- */
-
- body {
-
- }
-
-div {
-  background-color: black;
-}
-
-p {
-  width: 600px;
- 
-  margin: auto;
-}
-body>p {
-  color: aliceblue;
-  margin-top: -20px;
-}
-
- /* p:first-child { 
- 
-}  */
-p + p {
-  color: black;
-  margin-top: 15px;
-  margin-bottom: 75px;
-}
-
-.a {
-  list-style: none;
-  padding: 0;
-  box-sizing: border-box;
-  width: 600px;
-  margin: auto;
-}
-.a li:hover{
-  background-color: red;
-}
-
-.a li {
-  border: 3px solid;
-  background-color: pink;
-  width:180px ;
-  height: 40px;
-  margin-bottom: 15px;
-  text-align: center;
-  
+  body div:first-child {
+    
+    background-color: black;
+    color: aliceblue;
+    width:600px;
+    padding: 0 calc(50% - 300px);
+    
   }
-  
 
-  .a li:nth-child(n+5) {
-    margin-left: 216px;
-
-  }
-  .a li:nth-child(n+9) {
-    margin-left: 442px;
+  .one {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
   }
 
-  .a li:nth-child(4n) {
-    margin-top: -244px;
+  ul.a {
+    padding: 0;
+    list-style: none;
+    width: 600px;
+    margin: auto;
+    text-align: center; 
+    line-height: 34px;  
   }
-  .b {
-    margin-top: 280px;
+  ul.a>li{
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    background-color: pink;
+  }
+  ul.a>li:nth-child(n+5) {
+    margin-left: 209px;
   }
 
+  ul.a>li:nth-child(n+9) {
+    margin-left: 421px;
+  }
+  ul.a>li:nth-child(4n+5) {
+    margin-top: -220px;
+  }
+  .a>li:hover {
+    background-color: red;
+  }
 
-  
+   .b {  
+    padding: 0;
+    list-style: none;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+    text-align: center;
+  }
 
-
-
-
-
-
+   .b>li {
+     font-size: initial;
+    background-color: pink;
       
+    display: inline-block;
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+    border: 3px solid;
+    margin-bottom: 15px;
+    
+  } 
+  .b>li:hover {
+    background-color: red;
+  }
+ 
+  .b>li:nth-child(3n + 1) {
+    margin-right: 30px;
+
+  }
+  .b>li:nth-child(3n + 2) {
+    margin-right: 30px;
+  } 
+  .b>li:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  .links {
+    padding: 0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .links>li {
+    box-sizing: border-box;
+    border-bottom: 1px dotted;
+    margin-bottom: -1px;
+  }
+
+  .c {
+    background-color: rgb(226, 150, 226);
+  }
+
+  .c>p {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+   
+  }
 
 
 
 
+  
+  
+
+
+
+
+  
     </style>
 
 </head>
 
 <body>
-    <div>
-        div
+    
+  <div> hello world 请调整浏览器窗口大小查看效果 </div>
+    
+  <p class="one">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+    
+  <ul class="a">
+    <li>宽180高40（包含边框）</li>
+    <li>水平间隙30px</li>
+    <li>垂直间隙15px</li>
+    <li>边框宽度3px</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+  </ul>
 
-    </div>
-      
-     <p>hello world 请调整浏览器窗口大小查看效果</p>
-    
-     <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
-    
-     <ul class="a">
-       <li>宽180高40（包含边框）</li>
-       <li>水平间隙30px</li>
-       <li>垂直间隙15px</li>
-       <li>边框宽度3px</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-       <li>产品</li>
-     <ul>
-  
-      <ul class="b">
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li> 
-       <li></li>
-     </ul> 
+  <ul class="b">
+    <li>宽180高40</li>
+    <li>水平间隙30px</li>
+    <li>垂直间隙15px</li>
+    <li>边框宽度3px</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+    <li>产品</li>
+ </ul>
 
-    
+ <ul class="links">
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+
+
+
+ </ul>
+  <div class="c">
+    <p>©版权所有</p>
+     <p>本页所有布局均使用块元素</p>
+    </div> 
 </body>
 </html>

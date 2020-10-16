@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>document</title>
   <style>
-
     * {
       background-color: rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 1px red;
     }
+/* 
+    body {
+      height: 100%;
+    }
 
-    
+    div {
+      width: 300px;
+      height: 300px;
+    }
+
+    .one {
+
+      position: relative;
+    }
+
+    .one>img {
+      width: 300px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+    } 
 
 
 
-    
+
+    .b>img {
+      width: 200px;
+      object-fit: contain;
+    }*/
+    .a {
+      width: 200px;
+      height: 200px;
+      background-image: url(https://cn.bing.com/th?id=OJ.2Eh3yWRgmXNSkA&pid=MSNJVFeeds);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+    }
+    .b {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .c {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+    .c>img {
+      max-width: 100%;
+      max-height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      position: absolute;
+    }
 
 
   </style>
 </head>
+
 <body>
-  <div class="one">
-    <img src="https://cn.bing.com/th?id=OJ.2Eh3yWRgmXNSkA&pid=MSNJVFeeds" alt="">
-  </div>
-      <br>
-  <div class="b">
-    <img src="https://blog.csdn.net/images/blog-move.png" alt="">
-  </div>
+  <div class="a"></div>
+  <br> 
+  <img class="b" src="https://blog.csdn.net/images/blog-move.png" alt="">
   <br>
+
   <div class="c">
     <img src="https://tse1-mm.cn.bing.net/th/id/OIP.JPE2II_Hrjogy9pNkjzn8AAAAA?w=187&h=333&c=7&o=5&pid=1.7" alt="">
   </div>
-    <br>
+
+  <br>
 
 
 
 </body>
+
 </html>

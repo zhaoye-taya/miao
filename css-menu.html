@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      background-color: tan;
+      box-shadow: 0 0 1px red;
+    }
+
+    .menu {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .menu>li {
+
+
+      display: inline;
+    }
+
+    .menu li {
+
+      width: 100px;
+      position: relative;
+
+    }
+
+
+
+    ul ul {
+      list-style: none;
+      display: none;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      top: 100%;
+
+    }
+
+    ul ul ul {
+      top: 0;
+      left: 100%;
+
+    }
+
+    li:hover>ul {
+      display: block;
+      color: blue;
+
+
+
+    }
+
+    li>ul>li:hover {
+      background-color: violet;
+
+    }
+
+    li:hover {
+      background-color: thistle;
+    }
+
+    li>ul {
+
+      text-align: center;
+    }
+
+    li:hover>ul {
+      display: block;
+    }
+
+    */
+  </style>
+
+</head>
+
+<body>
+  <ul class="menu">
+    <li>第一栏
+      <ul>
+        <li>www
+          <ul>
+            <li>gfdsgsgg</li>
+            <li>gggsggsgs</li>
+            <li>gsgggsgs </li>
+          </ul>
+        </li>
+        <li>wwwww</li>
+        <li>wwwee</li>
+        <li>wrwrwrwrw
+          <ul>
+            <li>gfdsgsgg</li>
+            <li>gggsgs</li>
+            <li>gsgggsgs</li>
+          </ul>
+        </li>
+        <li>rww</li>
+        <li>wrwrwr
+          <ul>
+            <li>gfdsggg</li>
+            <li>gggsggsgs</li>
+            <li>gsgsgs</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      第二栏
+      <ul>
+        <li>rwrw</li>
+        <li>wrwgaq</li>
+        <li>qrqrrqqqrq
+          <ul>hgdgd</ul>
+          <ul>jdd</ul>
+          <ul>htcghdf</ul>
+        </li>
+        <li>rqfqfqfq</li>
+        <li>fqqfqf</li>
+        <li>ffq</li>
+      </ul>
+    <li>
+    <li>
+      第三栏（aa）
+      <ul>
+        <li>rrree</li>
+        <li>rr</li>
+        <li>rrrrr
+          <ul>jfjd</ul>
+          <ul>jdj</ul>
+          <ul>djdjd</ul>
+          <ul>djdjdt</ul>
+          <ul>djdjd</ul>
+          <ul>djdjdgg</ul>
+        </li>
+        <li>ggggg</li>
+      </ul>
+    </li>
+
+    <li>
+      第四栏（bbbbb）
+      <ul>
+        <li>truyyhr</li>
+        <li>ttt</li>
+        <li>uhhjdf</li>
+        <li>uuuuu</li>
+        <li>rghu</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>

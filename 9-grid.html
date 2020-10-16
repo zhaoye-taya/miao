@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+
+      width: 165px;
+      margin: 0;
+      padding: 2.5px;
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 5px solid blue;
+      margin: -2.5px;
+      vertical-align: top;
+      position: relative;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    ul li:hover {
+      border-color: red;
+      z-index: 100;
+
+    }
+
+
+    /* 方式：
+       可以使用div布局
+       可以使用table布局
+       如兼容ie6 需要用ul里的li包含<a>标签使用 */
+
+  </style>
+
+</head>
+
+<body>
+  <ul>
+    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+  </ul>
+</body>
+
+</html>

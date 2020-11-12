@@ -1,0 +1,21 @@
+.data-balloon-pos::before {
+    content: 'What up!';
+    position: absolute; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -50px;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    /* transform: translate(-50px 100px); */
+    display: none;
+    text-align: center;
+}
+.data-balloon-pos:hover::before{
+    display: block;
+    margin-bottom: 12px;
+    
+}

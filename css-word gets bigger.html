@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+     
+      div {
+          width: 220px;
+          height: 120px;
+          padding: 7px;
+          background-color: green;
+          border: 1px solid gray;
+          border-bottom: 5px red solid;         
+          position: relative;          
+          vertical-align: bottom;
+          transition: 1s;
+      } 
+      div:hover {
+        font-size: 50px;
+        background-color: rgb(93, 208, 228);
+      }
+      div::after {
+          content: "";
+          height: 118px;
+          width: 5px;
+          display: inline-block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>订阅博客</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: fontawesome;
+    src: url('./fontawesome-webfont.woff2');
+}
+.fa {
+    display: inline-block;
+    font-family: fontawesome;
+    font-style: normal;
+    font-weight: normal;
+}
+.fa-fw {
+  width: 1.3em;
+}
+.fa-star-o::before {
+  content: '\f005';
+}
+.fa-star-o::before {
+  content: '\f006';
+}

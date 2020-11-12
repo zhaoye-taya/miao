@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.top-banner a {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2a9e6db5e3c5374301827435d8595c6.jpg?w=5120&h=240);
+    background-size: auto 120px; 
+    background-repeat: no-repeat;
+    background-position: 50%;    
+}
+a {
+    font-size: 12px;
+    color: rgb(176,176,176);
+    
+    text-decoration: none;
+}
+.site-topbar {
+    height: 40px;
+    background-color: rgb(51,51,51);
+    min-width: 1226px;      
+    span {
+        font-size: 12px;
+        color: #424242;
+        line-height: 40px;
+        margin: 0 .3em;
+    }
+    .site-topbar-inner {
+        width: 1226px;
+        margin: auto;
+        a{
+            line-height: 40px;           
+            &:hover {
+                color: #fff;           
+            }          
+        }        
+    }
+    .site-topbar-right-card {
+        float: right;
+        
+        .shopping-card {
+            display: inline-block;
+            margin-left: 25px;
+            background-color: #424242;
+            position: relative;
+             &:hover {
+               .shopping-link {
+                 color: #ff6700;
+                 background-color: white;
+               }
+            }
+            .shopping-link {
+                display: block;
+                padding: 0 15px;
+                width: 90px;
+                line-height: 40px;
+                text-align: center;
+            }
+               &:hover {
+                  .shopping-card-hover {
+                      height: 140px;
+                    z-index: 999px;
+                  }
+                }
+            .shopping-card-hover {
+                transition: 1s;
+                height: 0px;                              
+                position: absolute;
+                width: 310px;
+                top: 100%;
+                right: 0;
+                background-color: white;
+                box-shadow: 0px 2px 3px gray;
+            }
+        }
+
+    }
+    .site-topnav {
+        width: 1226px;
+        
+    }
+         
+ }

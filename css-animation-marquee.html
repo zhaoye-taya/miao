@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* @keyframes move{
+  from {
+   text-indent: 100%;
+  }
+  to {
+    text-indent: -30px;
+  }
+} 
+  div {
+    overflow: hidden;
+    animation: move 3s linear 11111;
+  }
+
+*/
+
+
+ * {
+   background-color: gray;
+ }
+
+      @keyframes move {
+        form {
+         margin-left: 100%;
+         transform: translate(0);
+        }
+        to {
+          margin-left: 0;
+          transform: translate(-100%);
+      }
+      }
+      div {
+        border: 1px solid red;
+        background-color: tan;
+        overflow: hidden;
+        height: 100px;  
+        white-space: nowrap;       
+      }
+      span {
+        line-height: 100px;
+        background-color: tan;
+        display: inline-block;
+        margin-left: 100%;
+        animation: move 36s linear 11111;        
+        }
+      marquee {
+        background-color: rgb(181, 181, 236);
+        line-height: 100px;
+        border: 1px solid blue;
+        margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span></div>
+    <marquee behavior="" direction="">aaa</marquee>
+</body>
+</html>

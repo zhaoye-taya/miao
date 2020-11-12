@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+      /* dd {
+        display: inline-block;
+        margin-left: 0;
+      }
+      dt {
+        height: 0;       
+      }
+      dt + dd {
+        margin-left: 100px;      
+      }
+      dt::after {
+        content: ":";
+      }
+      dt + dd::before {
+        content: none;
+      }
+      dd::before {
+        content: ",";
+      } */
+      
+      dl {
+        padding-left: 80px;
+        position: relative;
+      }
+      dt {
+        position: absolute;
+        left: 80px;
+        transform: translate( calc(-100% - 5px));
+      }
+      dd {
+        margin-left: 0;
+        display: inline;
+      }
+      dt + dd::before {
+        content: '';
+        display: block;
+      }
+      dt::after {
+        content: ":";
+      }
+      dd::before {
+        content: ",";
+      }
+      
+     
+      
+      
+       
+
+
+
+
+    </style>
+</head>
+<body>
+  <dl>
+  <dt>主导演</dt>
+  <dd>sfffff</dd>
+  
+
+    
+  <dt>主演</dt>
+  <dd>ff</dd>
+  <dd>fbggdg</dd>
+  <dd>dgdga</dd>
+  <dd>agaga</dd>
+  <dd>gagshhhh</dd>
+
+  <dt>副演</dt>
+  <dd>grgr</dd>
+  <dd>htrtr</dd>
+  <dd>rhrhhgt</dd>
+  <dd>hthtrh</dd>
+</dl>
+</body>
+</html>

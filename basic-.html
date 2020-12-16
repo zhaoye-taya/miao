@@ -13,12 +13,18 @@
   var b = Number(prompt('请输入b'))
   var c = Number(prompt('请输入c'))
   var f = (a + b) / c
-  console.log(f)
+  console.log(Math.floor(f))
 
 </script>
 
 <script type="norun" id="ch0103/04">
- 
+  var a = Number(prompt('请输入a'))
+  var b = Number(prompt('请输入b'))
+  var c = Number(prompt('请输入c'))
+  var sum = a + b
+  var remider = sum % c
+  var r = (sum - reminder) / c
+  console.log(r)
 
 </script>
 
@@ -42,7 +48,8 @@
   var c = Number(prompt('请输入c'))
   var d = Number(prompt('请输入d'))
   var x = Number(prompt('请输入x'))
-
+  var result = a * x ** 3 + b * x ** 2 + c * x ** 1 + d
+  console.log(result)
 </script>
 
 <script type="norun" id="ch0103/08">
@@ -306,8 +313,8 @@
 </script>
 
 <script type="norun" id="ch0104/14">
- var weight = Number(prompt())
- var e = prompt()
+ var weight = Number(prompt('weight'))
+ var e = prompt('e')
  var overflow = weight - 1000
  var price = 8
  if (overflow > 0) {
@@ -420,8 +427,7 @@
     var age = Number(prompt('输入年龄'))
     sum = sum + age
     counter = counter + 1
-  }
-
+  } 
   console.log((sum / n).toFixed(2))
 </script>
 
@@ -647,50 +653,331 @@
 </script>
 
 <script type="norun" id="ch0105/17">
- 
+  var k = Number(prompt('输入k'))
+  var a = 1
+  var b = 1
+  if (k < 3) {
+    console.log(1)
+  }else {
+    for (var i = 2; i < k; i++) {
+      var c = a + b 
+      a = b 
+      b = c 
+    }
+    console.log(c)
+  }
 </script>
 
 <script type="norun" id="ch0105/18">
-
-</script>
-
-<script type="norun" id="ch0105/19">
   var n = Number(prompt('输入n行病例数'))
- debugger
- for (var i = 0; i <= n; i ++) {
-   var x = Number(prompt('输入临床试验总病例数x'))
-   var y = Number(prompt('输入疗效有效的例数y'))
-   if (y / x > 0.05) {
-     console.log('same')
-   }else if (y / x < 0.05) {
+  var total = Number(prompt('输入临床试验总病例数x'))
+  var effective = Number(prompt('输入疗效有效的例数y'))
+  ratio = effective / total
+debugger
+ for (var i = 1; i < n; i++) {
+  var t = Number(prompt('输入t'))
+  var e = Number(prompt('输入e'))
+  var r = e / t
+  if (r - ratio > 0.05) {
+     console.log('better')
+   }else if (ratio - r > 0.05) {
      console.log('worse')
    }else {
-     console.log('better')
+     console.log('same')
    }
  }
 </script>
 
+<script type="norun" id="ch0105/19">
+  var n = Number(prompt('输入屋顶数n'))
+  var minute = 0
+  for (var i = 0; i < n; i++) {
+   var x = Number(prompt('输入坐标点x'))
+   var y = Number(prompt('输入坐标点y'))
+   var p = Number(prompt('输入坐标点p'))
+   minute =Math.ceil(((Math.sqrt(x **2 + y **2)) / 50) * 2 + p + p * 0.5)
+  }
+  console.log(minute)
+</script>
+
 <script type="norun" id="ch0105/20">
- 
+  var h = Number(prompt('输入球的初始高度h'))
+  var sum = h
+  debugger
+  for (var i = 2; i <= 10; i++) { 
+    h = h / 2 
+    sum += h * 2
+    m = m / 2
+  }
+  console.log(sum,h / 2)
+  
+
 </script>
 
 <script type="norun" id="ch0105/21">
+  var n = Number(prompt('输入n'))             
  
-</script>
+  while (n != 1) {
+    if (n % 2 == 1) {
+      var t = n * 3 + 1
+      console.log(n + '*3+1=' + t)
+      n = t
+    }else if (n % 2 == 0){
+      var t = n / 2
+      console.log(n + '/2=' + t )
+      n = t
+    }
+  }
+  console.log('end')
+  
+</script> 
 
 <script type="norun" id="ch0105/22">
- 
+ var money = 300
+ var stock = 0
+ var flag = false
+
+  for (var i = 1; i <= 12; i++) {
+    money += 300
+    var budget = Number(prompt('输入预算'))
+    if (money < budget) {
+      console.log(-i)
+      flag = true
+      break
+    }
+    money = money - budget
+    if (money >= 100) {
+      var left = money % 100
+      stock += money -left
+      money = left
+    }
+}
+if (!flag) {
+  console.log(stock * 1.2 + money)
+}
 </script>
 
 <script type="norun" id="ch0105/23">
- 
+  var stock = Number(prompt('输入药品总量m'))
+  var n = Number(prompt('输入取药人数n'))
+  var c = 0
+  for (var i = 0; i < n; i++) { 
+    var need = Number(prompt('输入每个病人需要的药品数量num'))
+    if (need <= stock) {
+      stock -= need
+    }else {
+      c++
+    }
+  }
+  console.log(c)
+
 </script>
 
 <script type="norun" id="ch0105/24">
- 
+  var n = Number(prompt('输入n')) 
+  var c = 0
+  var max = 0
+  for (var i = 0; i < n; i++) {
+    var a = Number(prompt('输入a'))
+    var b = Number(prompt('输入b'))
+    var isNormal = a >= 90 && a <= 140 && b >= 60 && b <= 90
+    
+    if (isNormal) {
+      c++
+      if (c > max) {
+        max = c
+      }
+    }else {
+      c = 0
+    }
+  }
+  console.log(max)
 </script>
 
 <script type="norun" id="ch0105/25">
+ for (var i = 1; i <= 999; i++) {
+   var a7 = i % 7
+   var b7 = (i - a7) / 7 % 7
+   var c7 = (i - a7 - b7 * 7) / 7 / 7 % 7
+   
+   var a9 = i % 9
+   var b9 = (i - a9) / 9 % 9
+   var c9 = (i - a9 - b9 * 9) / 9 / 9 % 9
+  
+   if (a7 == c9 && b7 == b9 && c7 == a9) {
+     console.log(i, '' + c7 + b7 + a7, '' + c9 + b9 + a9)
+     break
+    }
+  }
+</script>
+
+<script type="norun" id="ch0105/26">
+ var n = Number(prompt('输入n'))
+ var count = 0
+ for (var i = 0; i < n; i++) {
+   var x = Number(prompt('输入x'))
+   var g = x % 10
+   var s = (x - g) / 10 % 10
+   var b = (x - g -s * 10) / 100 % 10
+   var q = (x - g - s * 10 - b * 100) / 1000 % 10
+
+   if (g - s - b - q > 0) {
+     count++
+   }
+ }
+ console.log(count)
+</script>
+
+<script type="norun" id="ch0105/27">
+ var k = Number(prompt('输入k'))
+ var s = 0
+
+ for (var i = 1; i++) {
+   s += 1 / i 
+   if (s > k) {
+     console.log(i)
+     break
+   }
+ }
+
+
+</script>
+
+<script type="norun" id="ch0105/28">
+ var n = Number(prompt('输入n'))
+ while (n > 0){
+   var digit = n % 10
+   console.log(digit)
+   n = (n - digit) / 10
+}
+</script>
+
+<script type="norun" id="ch0105/29">
+  var n = Number(prompt('输入n'))
+  var isNegative = false
+  if (n < 0) {
+    n = -n
+    isNegative = true
+  }
+  var result = ''
+  do {
+    var digit = n % 10
+    result = result * 10 + digit
+    n = (n - digit) / 10
+  }while (n > 0)
+
+  if (isNegative) {
+    console.log('-' + result)
+  }else {
+    console.log(result)
+  }
+</script>
+
+<script type="norun" id="ch0105/30">
+  var m = Number(prompt('输入m'))
+  var k = 0
+  var c = 0
+  for (i = 1; i < k; i++) {
+    
+    c++
+  }
+  if (m % 19 == 0 && c = k) {
+    console.log('YES')
+  }else {
+    console.log('NO')
+  }
+</script>
+
+<script type="norun" id="ch0105/31">
+  var N = Number(prompt('输入N'))
+  var M = Number(prompt('输入M'))
+  var c = 0
+  for (i = 1; i < M; i++) {
+    N += 1
+    if (N % M == 0) {
+      c = N + 1
+    }else {
+      c++
+    }
+  }
+  console.log(c)
+</script>
+
+<script type="norun" id="ch0105/32">
+  var n = Number(prompt('输入n'))
+
+</script>
+
+<script type="norun" id="ch0105/33">
+  var n = Number(prompt('输入n'))
+  var c = 0
+  debugger
+  while (c < n) {
+    n = 1 **(n - 1) * 1 / n 
+  }
+  console.log(n)
+</script>
+
+<script type="norun" id="ch0105/34">
+  var n = Number(prompt('输入n'))
+  var c = 0
+  var sum = 0
+  var sum_a = 0
+  debugger
+  while (c < n) {
+    sum = c * (c - 1)
+    sum++
+    for (var i = 0; i < n - 1; i++) {
+      var b = i - 1
+    sum_a = b * (b - 1)
+    }
+  }
+  console.log(sum + sum_a)
+</script>
+
+<script type="norun" id="ch0105/35">
  
 </script>
+
+<script type="norun" id="ch0105/36">
+ 
+</script>
+
+<script type="norun" id="ch0105/37">
+ 
+</script>
+
+<script type="norun" id="ch0105/38">
+ 
+</script>
+
+<script type="norun" id="ch0105/39">
+ 
+</script>
+
+<script type="norun" id="ch0105/40">
+ 
+</script>
+
+<script type="norun" id="ch0105/41">
+ 
+</script>
+
+<script type="norun" id="ch0105/42">
+ 
+</script>
+
+<script type="norun" id="ch0105/43">
+ 
+</script>
+
+<script type="norun" id="ch0105/44">
+ 
+</script>
+
+<script type="norun" id="ch0105/45">
+ 
+</script>
+
+
 
